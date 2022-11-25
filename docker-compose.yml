@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    image: mathcovax/ehpadjs
+    ports:
+      - 1506:80
+    volumes:
+      - ./app:/app
+    environment:
+      EHPADJS_NODEMON: "true"
+
+volumes:
+  mongo_data: {}
